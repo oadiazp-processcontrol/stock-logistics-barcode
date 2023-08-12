@@ -57,4 +57,4 @@ class ProductTemplate(models.Model):
             if related_vals:
                 template.write(related_vals)
             result |= template
-        return result
+        return result[-1]
